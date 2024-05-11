@@ -61,8 +61,8 @@ Contact
 Your Name - 
 Project Link: https://github.com/Finli-Hill/KSG-App
 
-Acknowledgements
-React Navigation
-MongoDB
-Node.js
-Express.js
+Acknowledgements:
+- https://reactnavigation.org/
+- https://www.mongodb.com/
+- https://nodejs.org/en
+- https://expressjs.com/
