@@ -1,5 +1,6 @@
 # KSG-App
-This repository is the home for all development on the Kingston Springs Gazette Mobile App
+This repository is the home for all development on the Kingston Springs Gazette Mobile App.
+
 ## Features
 - **User Authentication:** Secure login and signup options.
 - **News Feed:** Browse the latest articles and news.
@@ -8,7 +9,7 @@ This repository is the home for all development on the Kingston Springs Gazette 
 - **Notifications:** Stay updated with real-time notifications for new posts and important updates.
 
 ## Tech Stack
-- **Frontend:** React Native, Redux
+- **Frontend:** React Native with Expo, Redux
 - **Backend:** Django, Django REST Framework
 - **Database:** PostgreSQL
 - **APIs:** RESTful API
@@ -20,17 +21,23 @@ This repository is the home for all development on the Kingston Springs Gazette 
 - Python 3.8 or newer
 - pip (Python package installer)
 - Virtual environment (recommended)
+- Node.js
+- Expo CLI
+- Android Studio for the Android emulator
 
 ### Installation
-1. Clone the repo:
+
+1. **Clone the repo:**
    ```bash
-   git clone https://github.com/your-username/hometown-newspaper-app.git
+   git clone https://github.com/Finli-Hill/KSG-App.git
 Set up a virtual environment:
+
 bash
 Copy code
-cd hometown-newspaper-app
+cd KSG-App
 python -m venv venv
 Activate the virtual environment:
+
 On Windows:
 bash
 Copy code
@@ -39,26 +46,50 @@ On Unix or MacOS:
 bash
 Copy code
 source venv/bin/activate
-Install the required packages:
+Install the required backend packages:
+
 bash
 Copy code
 pip install -r requirements.txt
-Running the app
+Install the required frontend packages:
+
+bash
+Copy code
+cd frontend
+npm install
+Start the Expo development server for testing on Android Emulator:
+
+bash
+Copy code
+npx expo start --android
+Running the App
 Make migrations and migrate the database:
+
 bash
 Copy code
 python manage.py makemigrations
 python manage.py migrate
 Start the Django development server:
+
 bash
 Copy code
 python manage.py runserver
+Launch the app on the Android emulator:
+
+bash
+Copy code
+npx expo start --android
 Testing
-To run tests, use the following command:
+Backend tests:
 
 bash
 Copy code
 python manage.py test
+Frontend tests (adjust as necessary for your React Native tests):
+
+bash
+Copy code
+npm test
 
 Contact
 Your Name - 
